@@ -1,0 +1,26 @@
+<div id="topScroll" class="navbar-fixed">
+    <nav role="navigation" class="b-green scrollSpy">
+        <div class="container">
+            <div class="nav-wrapper">
+                {{! 博客logo和名称 }}
+                <div class="brand-logo">
+                    <a href="#!" class="waves-effect waves-light">
+                        <img src="{{#if @blog.logo}}{{@blog.logo}}{{else}}{{asset "images/logo.png"}}{{/if}}"
+                            alt="{{@blog.title}}" class="logo-img">
+                        <span class="logo-span">{{@blog.title}}</span>
+                    </a>
+                </div>
+                {{! 导航菜单 }}
+                {{navigation}}
+            </div>
+        </div>
+    </nav>
+</div>
+
+{{! 由于ghost未提供原生的搜索功能先隐藏搜索框 }}
+<div class="container row white-text grey darken-3" id="search">
+    <form action="https://www.google.com/search" method="get">
+        <input class="form-control" type="text" name="q" placeholder=" 搜 索 ...">
+        <input type="hidden" name="as_sitesearch" value="blinkfox.com">
+    </form>
+</div>
