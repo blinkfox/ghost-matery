@@ -105,6 +105,25 @@ body {
     height: 38px;
     vertical-align: middle;
 }
+i.left {
+    margin-right: 5px;
+}
+.nav-wrapper .menu-icon {
+    font-size: 1.5rem !important;
+}
+#mobile-nav .logo-img {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+#mobile-nav .logo-span {
+    vertical-align: middle;
+    display: block;
+    color: #444;
+    padding: 0px 15px;
+}
 .main-side {
     margin-bottom: 30px;
 }

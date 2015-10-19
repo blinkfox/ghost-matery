@@ -11,6 +11,12 @@
     </li>
 </ul>
 <ul class="side-nav" id="mobile-nav">
+    <li>
+        {{#if @blog.logo}}
+        <img src="{{@blog.logo}}" class="logo-img">
+        {{/if}}
+        <span class="logo-span">{{@blog.title}}</span>
+    </li>
     {{#foreach navigation}}
     <li><a href="{{url absolute="true"}}" class="waves-effect waves-light">{{label}}</a></li>
     {{/foreach}}

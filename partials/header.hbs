@@ -5,8 +5,9 @@
                 {{! 博客logo和名称 }}
                 <div class="brand-logo">
                     <a href="#!" class="waves-effect waves-light">
-                        <img src="{{#if @blog.logo}}{{@blog.logo}}{{else}}{{asset "images/logo.png"}}{{/if}}"
-                            alt="{{@blog.title}}" class="logo-img">
+                        {{#if @blog.logo}}
+                        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo-img">
+                        {{/if}}
                         <span class="logo-span">{{@blog.title}}</span>
                     </a>
                 </div>
