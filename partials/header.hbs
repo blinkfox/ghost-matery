@@ -7,8 +7,9 @@
                     <a href="#!" class="waves-effect waves-light">
                         {{#if @blog.logo}}
                         <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo-img">
-                        {{/if}}
+                        {{else}}
                         <span class="logo-span">{{@blog.title}}</span>
+                        {{/if}}
                     </a>
                 </div>
                 {{! 导航菜单 }}
