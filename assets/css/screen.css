@@ -1,14 +1,14 @@
 h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 h5 {
     font-size: 1.2rem;
@@ -60,6 +60,9 @@ mark {
 }
 .b-black {
     background-color: #34495e !important;
+}
+.b-text-white {
+    color: #fff !important;
 }
 .b-text-gray {
     color: #666 !important;
@@ -121,7 +124,8 @@ i.left {
 #mobile-nav .logo-span {
     vertical-align: middle;
     display: block;
-    color: #444;
+    color: #fff;
+    font-size: 1.4rem;
     padding: 0px 15px;
 }
 .main-side {
@@ -242,6 +246,9 @@ i.left {
 }
 .page-footer .footer-copyright a {
     color: #fff !important;
+}
+#article-detail .card-content {
+    padding: 20px 30px 20px 30px;
 }
 .article .detail-card .detail-card-tag .tag-icon {
     float: left !important;

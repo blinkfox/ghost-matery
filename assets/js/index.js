@@ -14,6 +14,8 @@ $(document).ready(function() {
     /*给文章详情内容图片增加light box*/
     // $('#article-content img').addClass('materialboxed');
     // $('.materialboxed').materialbox();
+    /*给文章详情内容图片增加响应式的class样式*/
+    $('#article-content img').addClass('responsive-img');
 
     /*回到顶部*/
     $('.scrollSpy').scrollSpy();
