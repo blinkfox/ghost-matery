@@ -16,18 +16,18 @@
                             <li>
                                 {{#author}}
                                 <a href="#" target="_blank" class="b-text-gray">
-                                    <i class="tiny material-icons b-icon">person_pin</i>&nbsp;{{name}}
+                                    <i class="fa fa-user"></i> {{name}}
                                 </a>
                                 {{/author}}
                             </li>
                             <li>
                                 <a class="b-text-gray">
-                                    <i class="tiny material-icons b-icon">today</i>{{date published_at format="MMMM DD YYYY"}}
+                                    <i class="fa fa-calendar"></i> {{date published_at format="MMMM DD YYYY"}}
                                 </a>
                             </li>
                             <li class="detail-card-tag hide-on-small-only">
                             {{#if tags}}
-                                <a><i class="tiny material-icons tag-icon b-text-gray">loyalty</i></a>
+                                <a><i class="fa fa-tag b-text-gray"></i></a>
                                 {{#foreach tags}}
                                 <span class="chip">{{name}}</span>
                                 {{/foreach}}

@@ -1,5 +1,5 @@
 {{#foreach posts}}
-<div class="card hoverable">
+<div class="card">
     <a href="{{url}}" target="_blank">
         {{! 文章特色图 }}
         {{#if image}}
@@ -14,13 +14,13 @@
             <ul class="list-inline">
                 <li>
                     <a class="b-link-green">
-                        <i class="tiny material-icons b-icon">today</i>{{date published_at format="MMMM DD, YYYY"}}
+                        <i class="fa fa-calendar"></i>&nbsp;{{date published_at format="MMMM DD, YYYY"}}
                     </a>
                 </li>
                 <li>
                     {{#author}}
                     <a href="{{url}}" target="_blank" class="b-link-green">
-                        <i class="tiny material-icons b-icon">person_pin</i>&nbsp;{{name}}
+                        <i class="fa fa-user"></i>&nbsp;{{name}}
                     </a>
                     {{/author}}
                 </li>
@@ -31,7 +31,7 @@
                 {{! 文章标签 }}
                 <div class="col s12 m8 card-tag">
                     {{#if tags}}
-                    <i class="material-icons tag-icon b-link-green">loyalty</i>
+                    <i class="fa fa-tag fa-lg b-link-green"></i>
                     {{#foreach tags}}
                     <span class="b-chip">{{name}}</span>
                     {{/foreach}}
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col s12 m4 read-more hide-on-small-only">
                     <a href="{{url}}" class="btn waves-effect waves-light b-green right" target="_blank">更 多
-                        <i class="material-icons right">send</i>
+                        <!-- <i class="material-icons right">send</i> -->
                     </a>
                 </div>
             </div>
