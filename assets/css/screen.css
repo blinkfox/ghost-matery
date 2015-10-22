@@ -111,8 +111,9 @@ body {
 i.left {
     margin-right: 5px;
 }
-.nav-wrapper .menu-icon {
-    font-size: 1.5rem !important;
+.nav-wrapper ul li a {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 #mobile-nav .logo-img {
     height: 50px;
@@ -127,6 +128,9 @@ i.left {
     color: #fff;
     font-size: 1.4rem;
     padding: 0px 15px;
+}
+nav .button-collapse i {
+    font-size: 1.8rem;
 }
 .main-side {
     margin-bottom: 30px;
@@ -228,6 +232,14 @@ i.left {
 .page-footer .footer-copyright a {
     color: #fff !important;
 }
+footer .b-foot {
+    padding-top: 20px;
+    line-height: 25px !important;
+    height: auto !important;
+}
+footer .footer-copyright .copyright {
+    display: block;
+}
 #article-detail .card-content {
     padding: 20px 30px 20px 30px;
 }
@@ -272,7 +284,7 @@ i.left {
     display: none;
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;
