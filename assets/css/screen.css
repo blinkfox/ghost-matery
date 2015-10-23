@@ -1,33 +1,48 @@
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 4.0rem;
 }
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 3.6rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3.2rem;
 }
 h4 {
     font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.2rem;
 }
 h5 {
     font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
 }
 h6 {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 p {
+    font-size: 1.05rem;
     margin: 0 0 10px;
+    line-height: 1.8rem;
 }
 blockquote {
     border-left: 5px solid #27ae60;
+    padding: 1.2rem 1rem 1.2rem 1.5rem;
+    color: #666;
+    background-color: #f1f8e9;
 }
 pre {
     overflow: auto;
     margin-bottom: 1em;
     padding: 0.5em 1%;
     background: #e8f2fb !important;
-    border: 1px solid #c9e1f6;
     border-radius: 2px;
     font-weight: normal;
     font-size: 1.1rem;
@@ -38,6 +53,14 @@ pre code {
     background: none;
     border: none;
     word-wrap: normal;
+}
+code {
+    padding: 0.1rem 0.2rem;
+    font-size: 95%;
+    color: #444;
+    white-space: nowrap;
+    background-color: #e8f5e9;
+    border-radius: 3px;
 }
 b, strong {
     font-weight: bold;
@@ -243,9 +266,15 @@ footer .footer-copyright .copyright {
 #article-detail .card-content {
     padding: 20px 30px 20px 30px;
 }
+#article-content a {
+    color: #00a67c;
+}
+#article-content a:hover {
+    color: #d9534f;
+}
 .detail-card .detail-card-tag .chip {
     height: 20px;
-    font-size: 0.8px;
+    font-size: 0.9rem;
     line-height: 20px;
 }
 .article .article-title {
@@ -274,7 +303,7 @@ footer .footer-copyright .copyright {
 }
 .prenext-card .b-link {
     font-size: 1.2rem;
-    color: #4caf50;
+    color: #27ae60;
     font-weight: 500;
 }
 .prenext-card .b-link:hover {
