@@ -32,35 +32,19 @@ p {
     margin: 0 0 10px;
     line-height: 1.8rem;
 }
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #999;
+}
 blockquote {
     border-left: 5px solid #27ae60;
     padding: 1.2rem 1rem 1.2rem 1.5rem;
     color: #666;
     background-color: #f1f8e9;
 }
-pre {
-    overflow: auto;
-    margin-bottom: 1em;
-    padding: 0.5em 1%;
-    background: #e8f2fb !important;
-    border-radius: 2px;
-    font-weight: normal;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-}
-pre code {
-    padding: 0;
-    background: none;
-    border: none;
-    word-wrap: normal;
-}
-code {
-    padding: 0.1rem 0.2rem;
-    font-size: 95%;
-    color: #444;
-    white-space: nowrap;
-    background-color: #e8f5e9;
-    border-radius: 3px;
+code[class*="language-"], pre[class*="language-"] {
+    color: #32cd45;
 }
 b, strong {
     font-weight: bold;
