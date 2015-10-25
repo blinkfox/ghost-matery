@@ -16,7 +16,17 @@
 
 #### 3. 代码高亮
 
-主题使用[prism.js][6]作为代码高亮引擎，这对于我们程序员来说算是最重要的特性了，matery主题默认采用黑客风格的prism的`okaidia`主题色，你也可以在prism.js官网下载自定制的主题色。
+主题使用[prism.js][6]作为代码高亮引擎，这对于我们程序员来说算是最重要的特性了，matery主题默认采用黑客风格的prism的`okaidia`主题色，你也可以在prism.js官网下载自定制的主题色。下面是代码高亮的示例：
+
+```java
+public class HelloWorld{  
+    // 程序的入口
+    public static void main(String args[]){
+        // 向控制台输出信息
+        System.out.println("欢迎访问Blinkfox.com的博客!");
+    }
+}
+```
 
 之所以采用prism.js，主要有以下原因吧：
 
