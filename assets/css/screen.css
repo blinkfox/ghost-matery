@@ -1,22 +1,22 @@
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: 4.0rem;
 }
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     font-weight: bold;
     line-height: 3.6rem;
 }
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    line-height: 3.2rem;
+    line-height: 3.0rem;
 }
 h4 {
     font-size: 1.3rem;
     font-weight: bold;
-    line-height: 2.2rem;
+    line-height: 2.0rem;
 }
 h5 {
     font-size: 1.2rem;
@@ -45,6 +45,8 @@ blockquote {
 }
 code[class*="language-"], pre[class*="language-"] {
     color: #32cd45;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 b, strong {
     font-weight: bold;
@@ -81,7 +83,8 @@ mark {
     color: #66bb6a !important;
 }
 .b-title {
-    font-size: 2.0rem !important;
+    font-size: 1.7rem !important;
+    line-height: 30px !important;
     padding: 10px 0px;
 }
 .b-chip {
