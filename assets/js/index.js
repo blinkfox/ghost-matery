@@ -25,7 +25,10 @@ $(document).ready(function() {
     });
 
     /*回到顶部*/
-    $('.scrollSpy').scrollSpy();
+    $('.top-scroll').click(function (e) {
+        e.preventDefault();
+        $(document.body).animate({scrollTop: 0}, 300);
+    });
 
     /*回到顶部按钮根据滚动条的位置的显示和隐藏*/
     $(window).scroll(function(event){
