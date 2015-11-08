@@ -114,6 +114,10 @@ body {
     border-top: 1px solid #111;
     border-bottom: 1px solid #111;
 }
+#search .search-input {
+  line-height: inherit;
+  font-size: 1.2rem;
+}
 .brand-logo .logo-img {
     height: 48px;
     vertical-align: middle;

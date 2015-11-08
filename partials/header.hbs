@@ -3,10 +3,10 @@
         <div class="container">
             <div class="nav-wrapper">
                 {{! 博客logo和名称 }}
-                <div class="brand-logo hide-on-med-and-down">
+                <div class="brand-logo">
                     <a href="{{@blog.url}}" class="waves-effect waves-light">
                         {{#if @blog.logo}}
-                        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo-img">
+                        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo-img hide-on-med-and-down">
                         {{else}}
                         <span class="logo-span">{{@blog.title}}</span>
                         {{/if}}
@@ -21,8 +21,6 @@
 
 {{! 由于ghost未提供原生的搜索功能先隐藏搜索框 }}
 <div class="container row white-text grey darken-3" id="search">
-    <form action="https://www.google.com/search" method="get">
-        <input class="form-control" type="text" name="q" placeholder=" 搜 索 ...">
-        <input type="hidden" name="as_sitesearch" value="blinkfox.com">
-    </form>
+      <input class="search-input form-control" type="text" name="q" placeholder=" 搜 索 ...">
+      <input type="hidden" name="as_sitesearch" value="blinkfox.com">
 </div>

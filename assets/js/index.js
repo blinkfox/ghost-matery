@@ -16,12 +16,16 @@ $(document).ready(function() {
     $('.button-collapse').sideNav();
 
     /*切换搜索*/
-    $('#toggle-search').click(function() {
+    $('.toggle-search').click(function() {
         var search = $('#search');
         search.is(":visible") ? search.slideUp() : search.slideDown(function() {
             search.find('input').focus();
         });
         return false;
+    });
+    /*搜索框失去焦点则隐藏搜索框*/
+    $('#search .search-input').blur(function(){
+        $('#search').slideUp();
     });
 
     /*回到顶部*/
