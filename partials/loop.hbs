@@ -1,20 +1,20 @@
 {{#foreach posts}}
 <div class="card">
     <a href="{{url}}" target="_blank">
-        {{! 文章特色图 }}
-        {{#if image}}
-        <div class="hide-on-med-and-up card-image waves-effect waves-block waves-light">
-            <img src="{{{image}}}" alt="{{{title}}}" class="responsive-img">
-        </div>
-        {{/if}}
         {{! 文章标题、简洁、发布时间、作者 }}
         <div class="card-content">
             <span class="card-title b-title b-text-green">{{{title}}}</span>
+            {{! 文章特色图 }}
+            {{#if image}}
+            <div class="hide-on-med-and-up card-image waves-effect waves-block waves-light">
+                <img src="{{{image}}}" alt="{{{title}}}" class="responsive-img">
+            </div>
+            {{/if}}
             <p class="b-text-gray">{{excerpt characters="120"}}</p>
             <ul class="list-inline">
                 <li>
                     <a class="b-link-green">
-                        <i class="fa fa-calendar"></i>&nbsp;{{date published_at format="MMMM DD, YYYY"}}
+                        <i class="fa fa-calendar"></i>&nbsp;{{date published_at timeago="true"}}
                     </a>
                 </li>
                 <li>

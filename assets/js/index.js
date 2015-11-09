@@ -23,8 +23,12 @@ $(document).ready(function() {
         });
         return false;
     });
-    /*搜索框失去焦点则隐藏搜索框*/
-    $('#search .search-input').blur(function(){
+    /*搜索框回车和失去焦点的搜索事件*/
+    $('#search .search-input').on('keydown', function(event) {
+        if (event.keyCode == '13') {
+            $('#search_tip_modal').openModal();
+        }
+    }).on('blur', function() {
         $('#search').slideUp();
     });
 
