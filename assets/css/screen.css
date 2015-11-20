@@ -45,8 +45,6 @@ blockquote {
 }
 code[class*="language-"], pre[class*="language-"] {
     color: #32cd45;
-    word-break: break-all;
-    word-wrap: break-word;
 }
 b, strong {
     font-weight: bold;
