@@ -26,7 +26,7 @@ $(document).ready(function() {
     /*搜索框回车和失去焦点的搜索事件*/
     $('#search .search-input').on('keydown', function(event) {
         if (event.keyCode == '13') {
-            $('#search_tip_modal').openModal();
+            //$('#search_tip_modal').openModal();
         }
     }).on('blur', function() {
         $('#search').slideUp();
