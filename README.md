@@ -1,5 +1,7 @@
+## ghost博客主题matery介绍
+
 ### 总体介绍
-[matery][1]是一个漂亮、简洁、响应式并采用`Material Design`设计的[Ghost][2]博客主题。`matery`基于[Materialize][3]的CSS框架开发而成，集成了[Font Awesome][4]字体图标，以绿色作为主色调，黄色和暗灰色为辅助色，对各种屏幕下的显示细节做了优化和处理，兼容主流的web浏览器。我的个人博客（[闪烁之狐的博客][5]）也在使用这个主题。
+[matery][1]是一个漂亮、简洁、响应式并采用`Material Design`设计的[Ghost][2]博客主题。`matery`基于[Materialize][3]的CSS框架开发而成，集成了[Font Awesome][4]字体图标，以绿色作为主色调，黄色和暗灰色为辅助色，对各种屏幕下的显示细节做了优化和处理，兼容主流的web浏览器。我的个人博客（[闪烁之狐的博客][5]）以前使用的这个主题，另外我推荐使用第二个版本[matery2][6]，个人更喜欢第二版的设计和对博文特色图片的全平台支持。
 
 ### 主要特性
 
@@ -15,9 +17,9 @@
 
 #### 3. “黑客”风格的代码高亮
 
-主题使用[prism.js][6]作为代码高亮引擎，这对于我们程序员来说算是最重要的特性了，matery主题默认采用黑客风格的prism的`okaidia`主题色，你也可以在prism.js官网下载自定制的主题色。下面是代码高亮的示例：
+主题使用[prism.js][7]作为代码高亮引擎，这对于我们程序员来说算是最重要的特性了，matery主题默认采用黑客风格的prism的`okaidia`主题色，你也可以在prism.js官网下载自定制的主题色。下面是代码高亮的示例：
 
-![代码高亮][7]
+![代码高亮][8]
 
 之所以采用prism.js，主要有以下原因吧：
 
@@ -31,7 +33,7 @@ ghost博客中大多主题都是英文的，各种字体、图标、CDN环境等
 
 当你看到本文的时候，应该已经有一个自己的ghost博客了，如果还没有的话，不妨去试，ghost使用Markdown写作，能够让人更加专注写作的内容本身，同时又能方便简单的排版显示。
 
-当你安装好ghost博客之后，只需将本主题[下载][8]下来，解压之后放在您博客的主题文件夹`content/themes/`里面，然后重启ghost博客，在博客后台全局设置页面选择本主题保存即可。
+当你安装好ghost博客之后，只需将本主题[下载][9]下来，解压之后放在您博客的主题文件夹`content/themes/`里面，然后重启ghost博客，在博客后台全局设置页面选择本主题保存即可。
 
 ### 自定制修改
 
@@ -65,6 +67,7 @@ ghost博客中大多主题都是英文的，各种字体、图标、CDN环境等
   [3]: http://materializecss.com/
   [4]: http://fontawesome.io/
   [5]: http://blinkfox.com/
-  [6]: http://prismjs.com/
-  [7]: http://7xnrn5.com1.z0.glb.clouddn.com/code20151026.png
-  [8]: https://github.com/chenjiayin1990/ghost-matery
+  [6]: https://github.com/blinkfox/ghost-matery2
+  [7]: http://prismjs.com/
+  [8]: http://7xnrn5.com1.z0.glb.clouddn.com/code20151026.png
+  [9]: https://github.com/chenjiayin1990/ghost-matery
