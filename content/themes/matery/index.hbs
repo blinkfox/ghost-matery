@@ -1,0 +1,29 @@
+{{!< default}}
+
+<div class="container section">
+    {{! 公告提示 }}
+    {{> notice}}
+
+    <div class="row">
+        <div class="main-side col s12 m12 l8">
+            {{! 文章列表 }}
+            <div class="article">
+                {{> loop}}
+            </div>
+            {{! 分页栏 }}
+            {{ pagination}}
+        </div>
+        <div class="col s12 m12 l4 hide-on-med-and-down">
+            <div class="sidebar">
+                {{! 博主基本信息 }}
+                {{> user_info}}
+
+                {{! 标签云 }}
+                {{tag_cloud}}
+
+                {{! 友情链接 }}
+                {{> friend_url}}
+            </div>
+        </div>
+    </div>
+</div>

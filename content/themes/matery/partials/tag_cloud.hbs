@@ -1,0 +1,14 @@
+{{! 标签云 }}
+<div class="card-tags card">
+	<div class="card-custom-title">
+		<i class="fa fa-tags fa-lg green-text text-darken-2"></i>&nbsp;
+		<span class="card-title green-text text-darken-2">标签云</span>
+	</div>
+	<div class="card-action">
+		<div class="tags">
+			{{#foreach tags}}
+			<a href="{{url}}" class="chip waves-effect waves-red" target="_blank">{{name}}</a>
+			{{/foreach}}
+		</div>
+	</div>
+</div>

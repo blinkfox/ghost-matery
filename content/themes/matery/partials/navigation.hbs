@@ -1,0 +1,26 @@
+<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
+<ul class="right hide-on-med-and-down">
+    {{#foreach navigation}}
+    <li><a href="{{url absolute="true"}}" class="li-menu waves-effect waves-light">{{label}}</a></li>
+    {{/foreach}}
+    {{! 由于ghost未提供原生的搜索功能先隐藏搜索框 }}
+    <li class="">
+        <a href="#!" id="toggle-search" class="toggle-search waves-effect waves-light">
+            <i class="mdi-action-search"></i>
+        </a>
+    </li>
+</ul>
+<ul class="side-nav" id="mobile-nav">
+    <li class="b-green">
+        {{#if @blog.logo}}
+        <img src="{{@blog.logo}}" class="logo-img static-img">
+        {{/if}}
+        <span class="logo-span">{{@blog.title}}</span>
+    </li>
+    {{#foreach navigation}}
+    <li><a href="{{url absolute="true"}}" class="waves-effect waves-light">{{label}}</a></li>
+    {{/foreach}}
+</ul>
+<a href="#!" class="toggle-search right waves-effect waves-light hide-on-large-only">
+    <i class="mdi-action-search"></i>
+</a>

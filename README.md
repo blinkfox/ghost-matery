@@ -1,73 +1,137 @@
-## ghost博客主题matery介绍
+<a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/6622822/c4c639fe-c8e7-11e4-9e64-5bec06c8b4c3.png" alt="Ghost" /></a>
+<a href="https://travis-ci.org/TryGhost/Ghost"><img align="right" src="https://travis-ci.org/TryGhost/Ghost.svg?branch=master" alt="Build status" /></a>
 
-### 总体介绍
-[matery][1]是一个漂亮、简洁、响应式并采用`Material Design`设计的[Ghost][2]博客主题。`matery`基于[Materialize][3]的CSS框架开发而成，集成了[Font Awesome][4]字体图标，以绿色作为主色调，黄色和暗灰色为辅助色，对各种屏幕下的显示细节做了优化和处理，兼容主流的web浏览器。我的个人博客（[闪烁之狐的博客][5]）以前使用的这个主题，另外我推荐使用第二个版本[matery2][6]，个人更喜欢第二版的设计和对博文特色图片的全平台支持。
+![Ghost Screenshot](https://cloud.githubusercontent.com/assets/120485/6626466/6dae46b2-c8ff-11e4-8c7c-8dd63b215f7b.jpg)
 
-### 主要特性
+![Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.](https://cloud.githubusercontent.com/assets/120485/6626501/b2bb072c-c8ff-11e4-8e1a-2e78e68fd5c3.png)
 
-#### 1. 响应式设计
+Ghost 目由非盈利性组织 **Ghost Foundation** 和一群优秀的独立[贡献者](https://github.com/TryGhost/Ghost/contributors)共同维护。我们正在尽最大努力让在线内容创作变得更好。
 
-主题采用了响应式设计，在各种设备和屏幕上都有很好的表现.如：在桌面浏览器的宽屏页面里采用了固定上导航栏，手机、平板等小屏幕上则收起和滑出侧导航栏。文字、图片等内容也能在页面中自适应显示。
+- [Ghost 官网（英文）](https://ghost.org) & [Ghost 中国](http://www.ghostchina.com/)
+- [最新版本（英文）](https://ghost.org/download/) & [最新版本（中文）](http://www.ghostchina.com/download/)
+- [技术支持（英文）](http://support.ghost.org/) & [问答社区（中文）](http://wenda.ghostchina.com/)
+- [主题文档](http://themes.ghost.org)
+- [贡献指南](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md)
+- [心愿列表](http://ideas.ghost.org/)
+- [技术博客](http://dev.ghost.org)
 
-#### 2. Material Design设计（材料设计）
-
-`Material Design`是谷歌自Android5.0推出的全新的跨平台体验的一套设计语言。核心思想就是把物理世界的体验带进屏幕。去掉现实中的杂质和随机性，保留其最原始纯净的形态、空间关系、变化与过渡，配合虚拟世界的灵活特性，还原最贴近真实的体验，达到简洁与直观的效果。
-
-主题内容均采用`卡片式`显示和交互，点击链接、按钮、图片等时使用波纹扩散动画，符合材料设计规范，体验起来简单、轻松和愉快。
-
-#### 3. “黑客”风格的代码高亮
-
-主题使用[prism.js][7]作为代码高亮引擎，这对于我们程序员来说算是最重要的特性了，matery主题默认采用黑客风格的prism的`okaidia`主题色，你也可以在prism.js官网下载自定制的主题色。下面是代码高亮的示例：
-
-![代码高亮][8]
-
-之所以采用prism.js，主要有以下原因吧：
-
-> Prism 是一款轻量、可扩展的代码语法高亮库，使用现代化的 Web 标准构建。 代码压缩后只有 1.6KB。每添加一个语言平均增加0.3-0.5KB，主题在 1KB 左右。 语言的 CSS 类是可继承的，所以你只需定义一次就能应用到多个代码片段。
-
-#### 4. 更适合国人使用
-
-ghost博客中大多主题都是英文的，各种字体、图标、CDN环境等对中文和国内环境的支持并不是很好，且大多数主题都太“朴素”了，没有现代感。试用了很多都不太满意，于是自己才决定开发一套更适合自己和国人使用的ghost主题，本主题字体显示优良，CDN默认试用国内环境，页面加载更快。
-
-### 安装使用
-
-当你看到本文的时候，应该已经有一个自己的ghost博客了，如果还没有的话，不妨去试，ghost使用Markdown写作，能够让人更加专注写作的内容本身，同时又能方便简单的排版显示。
-
-当你安装好ghost博客之后，只需将本主题[下载][9]下来，解压之后放在您博客的主题文件夹`content/themes/`里面，然后重启ghost博客，在博客后台全局设置页面选择本主题保存即可。
-
-### 自定制修改
-
-博客中的一些地方在博客后台管理界面里是无法设置的，但默认内容都是根据我自己的喜好设置的，您也可以修改成你自己喜欢的内容。
-
-#### 1. 公告提醒栏
-
-在博客的导航栏下有一公告提醒栏，响应式设计的，默认内容是:`推荐使用Chrome、Firefox等现代浏览器浏览本站。珍爱生命，请远离IE！`你可以在matery主题中打开文件`partials/notice.hbs`去修改。
-
-#### 2. 头像和二维码设置
-
-本主题中多了一个头像的概念，跟Logo有所差异，Logo是放在导航栏中的，而在宽屏浏览器中会显示博主信息，其中就有头像，默认是我自己喜欢的红色可爱的小狐狸头像，你可以去`assets/images`这个文件夹下替换成你自己喜欢的头像图片,注意图片名字和后缀不能修改，就是`avatar.jpg`。
-
-点击头像时会弹出手机访问的二维码，修改方式跟头像一样，不再赘述。
-
-#### 3. 联系方式修改
-
-社交联系方式等都放在`partials/user_info.hbs`文件中，你可以修改或者新增你自己需要的联系方式、图标和提醒文字等。图标修改参考Font Awesome的使用方法即可。
-
-#### 4. 友情链接修改
-
-友情链接默认是放在`partials/friend_url.hbs`文件中，你可以修改或者新增你自己喜欢的网站链接。
-
-### 祝你好运
-
-祝你使用本主题写博客更舒心，佛祖保佑更好运。本主题也必然有些不足之处，生命不息，折腾不止，如果有更好的设计和建议，我也会尽量抽出时间来完善，如果您发现了什么bug,可以给我留言，发邮件，加QQ都行。如果您觉得这个主题还不错的话，欢迎在github里star下以示支持，再次感谢。
+**注意：如果你在使用 Ghost 过程中遇到难题需要帮助，请尽量加入 [Slack 社区](https://ghost.org/slack/) 寻求帮助而不是在 Github 上新开一个 issue。**
 
 
-  [1]: https://github.com/chenjiayin1990/ghost-matery
-  [2]: https://ghost.org/
-  [3]: http://materializecss.com/
-  [4]: http://fontawesome.io/
-  [5]: http://blinkfox.com/
-  [6]: https://github.com/blinkfox/ghost-matery2
-  [7]: http://prismjs.com/
-  [8]: http://7xnrn5.com1.z0.glb.clouddn.com/code20151026.png
-  [9]: https://github.com/chenjiayin1990/ghost-matery
+# 快速安装
+
+安装前请确保已经安装了 Node.js - 我们建议使用 **Node v0.10.x** 的最新版本。
+
+Ghost 同时也支持 **Node v0.12** 和 **io.js v1.2** ，但是请注意，这些版本很有可能导致安装失败。如果遇到问题，请到[论坛](https://ghost.org/forum/installation/)寻求帮助。
+
+1. 下载 [最新版本](https://ghost.org/download/) 的 Ghost
+1. 解压文件至你所希望的安装位置
+1. 启动一个命令行窗口
+1. 执行 `npm install --production` 命令
+1. 启动 Ghost
+    - 本地环境：`npm start`
+    - 生产环境：`npm start --production`
+1. 启动浏览器，打开 `http://localhost:2368/ghost` 链接
+
+还可以参考详细的[安装指南](http://support.ghost.org/installation/) 。
+
+# 安装中文版
+
+Node.js 是必须的，同样也是建议使用  **Node v0.10.x** 的最新版本。如果你使用的是 **Node v0.12** 或 **io.js v1.2** 版本，请小心！遇到问题可以到 [问答社区](http://wenda.ghostchina.com/) 讨论。
+
+1. 下载[最新的 Ghost 中文版](http://www.ghostchina.com/download/) 。建议下载**集成安装包**，大概20M左右。
+1. 解压所有文件到你所希望的安装目录
+1. 启动一个命令行窗口
+1. 如果你下载的不是**集成安装包**（也就是没有 `node_modules` 目录），清闲执行 `npm install --production` 命令
+1. 启动 Ghost
+    - 本地环境：`npm start`
+    - 生产环境：`npm start --production`
+1. 启动浏览器，打开 `http://localhost:2368/ghost` 链接
+
+<a name="getting-started"></a>
+# 开发者(从 git 下载 Ghost)
+
+安装 Node.js。
+
+```bash
+# Node v0.10.x - 推荐
+# Node v0.12.x 与 io.js v1.2 - 部分支持
+#
+# 自行斟酌吧
+```
+
+克隆 :ghost:
+
+```bash
+git clone git://github.com/tryghost/ghost.git
+cd ghost
+```
+
+安装 grunt。
+
+```bash
+npm install -g grunt-cli
+```
+
+安装 Ghost。 如果你是在本地环境运行 ghost，可以使用 [master](https://github.com/TryGhost/Ghost/tree/master) 分支。如果是在生产环境运行，请使用 [stable](https://github.com/TryGhost/Ghost/tree/stable) 分支。 :no_entry_sign::rocket::microscope:
+
+```bash
+npm install
+```
+
+编译！
+
+```bash
+grunt init
+```
+
+为生产环境压缩各种文件。
+
+```bash
+grunt prod
+```
+
+启动博客。
+
+```bash
+npm start
+
+##  让 Ghost 在生产环境中运行请添加 --production 参数
+```
+
+祝贺你，一切搞定了！顺便说一下，你还可以直接执行 `npm install ghost` 指令将 Ghost 作为 npm 包来使用。[将 Ghost 作为 NPM 模块来使用](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-npm-module) 是一份很详尽的文档。
+
+还可以参考更详细的[安装指南](http://support.ghost.org/installation/) 。
+
+
+# 部署 Ghost
+
+![Ghost(Pro) + DigitalOcean](https://cloud.githubusercontent.com/assets/120485/8180331/d6674e32-1414-11e5-8ce4-2250e9994906.png)
+
+Ghost 官方支持的 **[Ghost(Pro)](https://ghost.org/pricing/)** 服务能够帮你节约大量时间，只需点几下鼠标就能部署一个 Ghost 实例到 [DigitalOcean](https://digitalocean.com) 的服务器上，并且还可以免费享受到全球化的 CDN 服务。
+
+从 **Ghost(Pro)** 所获得的所有收益都将用于 Ghost 基金 -- 一个非营利性的组织，为 Ghost 的开发和维护提供支持。
+
+如果你希望自己部署 Ghost，可以参考[这里](http://support.ghost.org/deploying-ghost/) 。
+
+如果你使用的是**阿里云主机**，还可以参考我们撰写的[系列文章](http://www.ghostchina.com/tag/aliyun-ecs/)，按照文中指引一步步安装 Ghost 以及依赖的各个组件。
+
+
+# 保持更新
+
+当 Ghost 有新版本发布时，请参考 [升级指南](http://support.ghost.org/how-to-upgrade/) 以了解如何升级 Ghost。
+
+你可以加入 [问答社区（中文）](http://wenda.ghostchina.com/) 和其他 Ghost 用户交流，或者在 [public Slack team](https://ghost.org/slack/) 与 Ghost 开发者沟通。我们每周二下午 5:30 都会在 Slack 上开碰头会。请注意，我们说的是`伦敦时间`。
+
+每次有新版本都会在 [技术博客](http://dev.ghost.org/tag/releases/) 上公布。你可以通过邮件订阅或者在 Twitter 上关注 [@TryGhost_Dev](https://twitter.com/tryghost_dev)。
+
+:saxophone::turtle:
+
+
+# 版权 & 协议
+
+Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).
+
+# 中文版本及插件
+
+Copyright (c) 2013-2015 Ghost 中国/中文网 - 采用 `MIT 许可协议` 发布。

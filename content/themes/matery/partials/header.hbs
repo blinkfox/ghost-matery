@@ -1,0 +1,36 @@
+<div id="topScroll" class="navbar-fixed">
+    <nav role="navigation" class="b-green scrollSpy">
+        <div class="container">
+            <div class="nav-wrapper">
+                {{! 博客logo和名称 }}
+                <div class="brand-logo">
+                    <a href="{{@blog.url}}" class="waves-effect waves-light">
+                        {{#if @blog.logo}}
+                        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo-img hide-on-med-and-down static-img">
+                        {{/if}}
+                        <span class="logo-span">{{@blog.title}}</span>
+                    </a>
+                </div>
+                {{! 导航菜单 }}
+                {{navigation}}
+            </div>
+        </div>
+    </nav>
+</div>
+
+{{! 由于ghost未提供原生的搜索功能先隐藏搜索框 }}
+<div class="container row white-text grey darken-3" id="search">
+      <input class="search-input form-control" type="text" name="q" placeholder=" 搜 索 ...">
+      <input type="hidden" name="as_sitesearch" value="blinkfox.com">
+</div>
+
+<!-- 搜索功能暂时未做，弹出提示吧 -->
+<div id="search_tip_modal" class="modal">
+    <div class="modal-content">
+        <h4>伤心提示</h4>
+        <p>作者失恋了，搜索功能无心开发了，请谅解吧！//(ㄒoㄒ)//!</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">同 情</a>
+    </div>
+</div>
