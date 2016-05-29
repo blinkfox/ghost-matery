@@ -1,0 +1,22 @@
+{{! 分页栏 }}
+<div class="paging">
+    <div class="row">
+        <div class="col s6 m6 l4">
+            {{#if prev}}
+            <a href="{{page_url prev}}" class="left waves-effect waves-light btn b-green">上一页</a>
+            {{else}}
+            <a class="left btn disabled">上一页</a>
+            {{/if}}
+        </div>
+        <div class="page-desc col l4 hide-on-med-and-down">
+            <div class="center-align b-text-gray">第 {{page}} 页 &frasl; 共 {{pages}} 页</div>
+        </div>
+        <div class="col s6 m6 l4">
+            {{#if next}}
+            <a href="{{page_url next}}" class="right waves-effect waves-light btn b-green">下一页</a>
+            {{else}}
+            <a class="right btn disabled">下一页</a>
+            {{/if}}
+        </div>
+    </div>
+</div>

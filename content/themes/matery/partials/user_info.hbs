@@ -1,0 +1,50 @@
+{{! 博主基本信息 }}
+<div class="card-user card">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img class="head-pic activator responsive-img static-img" src="{{asset "images/avatar.jpg"}}">
+    </div>
+    <div class="card-action">
+        <div class="user-info center-align">
+            <span class="card-title activator b-title b-text-green">{{@blog.title}}</span>
+            <p class="socail-link center-align">
+                <a target="_blank" href="https://github.com/ycjcl868" class="tooltipped" data-tooltip="访问我的GitHub"
+                    data-position="top" data-delay="5" target="_blank">
+                    <i class="fa fa-github fa-lg"></i>
+                </a>
+                <a href="mailto:chaolinjin@gmail.com" class="tooltipped" data-tooltip="邮件联系我:chaolinjin@gmail.com"
+                    data-position="top" data-delay="5" target="_blank">
+                    <i class="fa fa-envelope fa-lg"></i>
+                </a>
+                <a href="#!" class="tooltipped" data-tooltip="QQ号：45808948" data-position="top" data-delay="5">
+                    <i class="fa fa-qq fa-lg"></i>
+                </a>                
+
+                <a target="_blank" href="http://weibo.com/ycjcl" class="tooltipped" data-tooltip="新浪微博" data-position="top" data-delay="5">
+                    <i class="fa fa-weibo fa-lg"></i>
+                </a>                
+
+                <a href="#!" class="tooltipped" data-tooltip="微信号：kylinJCL" data-position="top" data-delay="5">
+                    <i class="fa fa-weixin fa-lg"></i>
+                </a>
+                <a href="{{@blog.url}}/rss/" class="tooltipped" data-tooltip="RSS" data-position="top"
+                    data-delay="5" target="_blank">
+                    <i class="fa fa-rss fa-lg"></i>
+                </a>
+            </p>
+            <h6 class="desc">
+                {{#if @blog.description}}
+                    {{@blog.description}}
+                {{else}}
+                    从来没有真正的绝境，只有心灵的迷途。
+                {{/if}}
+            </h6>
+        </div>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title b-text-green">{{@blog.title}}<i class="fa fa-close right"></i></span>
+        <p class="b-text-gray">不妨用手机扫描下面的二维码访问本网站：</p>
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="qrcode activator responsive-img static-img" src="{{asset "images/qcode.png"}}">
+        </div>
+    </div>
+</div>

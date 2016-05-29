@@ -1,0 +1,348 @@
+ @import url("./common_fun.less");
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 4.0rem;
+}
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 3.6rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3.0rem;
+}
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2.0rem;
+}
+h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+p {
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+    line-height: 1.8rem;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #999;
+}
+blockquote {
+    border-left: 5px solid #27ae60;
+    padding: 1.2rem 1rem 1.2rem 1.5rem;
+    color: #666;
+    background-color: #f1f8e9;
+}
+pre {
+    padding: 1em;
+    margin: .5em 0;
+    background: #272822;
+    overflow: auto;
+    border-radius: 0.3em;
+    tab-size: 4;
+}
+code {
+    font-size: 96%;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 3px;
+}
+pre code {
+    color: #32cd45;
+    background-color: #272822;
+}
+code[class*="language-"], pre[class*="language-"] {
+    color: #32cd45;
+}
+b, strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+small {
+    font-size: 85%;
+}
+cite {
+    font-style: normal;
+}
+mark {
+    background-color: #fcf8e3;
+    padding: .2em;
+}
+.b-green {
+    background-color: #27ae60 !important;
+}
+.b-black {
+    background-color: #34495e !important;
+}
+.b-text-white {
+    color: #fff !important;
+}
+.b-text-gray {
+    color: #666 !important;
+}
+.b-text-green {
+    color: #27ae60 !important;
+}
+.b-link-green {
+    color: #66bb6a !important;
+}
+.b-title {
+    font-size: 1.7rem !important;
+    line-height: 35px !important;
+    padding: 10px 0px;
+}
+.b-chip {
+    color: #fff;
+    background-color: #66bb6a;
+    display: inline-block;
+    height: 25px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 12px;
+    border-radius: 16px;
+}
+body {
+    background-color: #e5e5e5;
+    margin: 0;
+}
+.container {
+    width: 90%;
+}
+.container .row {
+    margin-bottom: 0px;
+}
+#search {
+    display: none;
+    margin-bottom: 0;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+#search .search-input {
+  line-height: inherit;
+  font-size: 1.2rem;
+}
+.brand-logo{
+    .logo-img {
+        height: 48px;
+        vertical-align: middle;
+    }
+    .logo-span{
+        font-size: 1.5rem;
+        font-family: 'Noto Serif', 'Hiragino Sans GB', 'Microsoft Yahei', serif;
+    }
+}
+
+i.left {
+    margin-right: 5px;
+}
+.nav-wrapper ul li a {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+@media only screen and (min-width: 601px){
+    nav .container .brand-logo{
+        line-height: 60px;
+    }
+}
+
+#mobile-nav .logo-img {
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 15px;
+}
+#mobile-nav .logo-span {
+    vertical-align: middle;
+    display: block;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0px 15px;
+}
+nav .button-collapse i {
+    font-size: 1.8rem;
+}
+.main-side {
+    margin-bottom: 30px;
+}
+.notice .card .card-content {
+    color: #666;
+}
+.article .card .card-image img {
+    width: 100%;
+    height: 200px;
+}
+.article .card .tag-readmore {
+    padding: 14px;
+}
+.article .card .list-inline {
+    padding-bottom: 2px;
+    padding-left: 0;
+    list-style: none;
+}
+.article .card .list-inline li {
+    float: left;
+    display: inline-block;
+    padding-right: 30px!important;
+}
+.article .card .card-action .row {
+    margin-bottom: -10px;
+}
+.article .card .read-more a {
+    .pre(transition,.3s ease-in-out);
+    color: #fff;
+    margin-right: 0px;
+}
+.article .card .card-tag {
+    padding-bottom: 10px;
+}
+.article .card .card-tag span {
+    margin-bottom: 5px;
+}
+.section .paging {
+    margin-top: 30px;
+}
+.paging .page-desc {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.sidebar .card-user .head-pic {
+    margin: 0px auto;
+    padding: 20px 0px;
+    /*border-radius: 50%;*/
+    vertical-align: middle;
+    width: 30%;
+    height: 30%;
+}
+.sidebar .card-user .qrcode {
+    margin: 0px auto;
+    padding: 5px 5px;
+    vertical-align: middle;
+    width: 70%;
+    height: 70%;
+}
+.sidebar .card-user .socail-link {
+    padding: 12px 0px;
+}
+.sidebar .user-info .desc {
+    line-height: 1.5rem;
+    padding: 2px 30px;
+    color: #999;
+}
+.card-custom-title {
+    padding: 8px 20px;
+}
+.tags .chip {
+    margin-right: 0px !important;
+    margin: 3px 2px;
+    color: #666 !important;
+    text-transform: none !important;
+}
+.tags .chip:hover {
+    color: #fff !important;
+    background-color: #27ae60;
+}
+.card-friend .friend-url {
+    padding-top: 0px;
+}
+.card-friend .friend-url li {
+    width: 50%;
+    float: left;
+    line-height: 18px;
+    padding: 2px 0px 15px 5px;
+}
+.card-friend .friend-url li a {
+    color: #27ae60;
+    text-decoration: none;
+    text-transform: none;
+}
+.page-footer {
+    margin-top: 0px !important;
+    padding-top: 5px !important;
+}
+.page-footer .footer-copyright a {
+    color: #fff !important;
+}
+footer .b-foot {
+    padding-top: 20px;
+    line-height: 25px !important;
+    height: auto !important;
+}
+footer .footer-copyright .copyright {
+    display: block;
+}
+#article-detail .card-content {
+    padding: 20px 30px 20px 30px;
+}
+#article-content a {
+    color: #00a67c;
+}
+#article-content a:hover {
+    color: #d9534f;
+}
+.detail-card .detail-card-tag .chip {
+    height: 20px;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+.article .article-title {
+    font-size: 2rem;
+}
+.article .article-action {
+    padding: 0px;
+}
+.article .article-share {
+    margin-top: 15px;
+}
+.prenext-card .prenext-row {
+    padding: 10px;
+}
+.prenext-card .prenext {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.prenext-card .prenext img {
+    width: 75px;
+    height: 75px;
+}
+.prenext-card .pn-title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.prenext-card .b-link {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: 500;
+}
+.prenext-card .b-link:hover {
+    color: #004d40;
+}
+
+.post-comment{
+    padding: 15px;
+}
+
+.top-scroll {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 998;
+}
